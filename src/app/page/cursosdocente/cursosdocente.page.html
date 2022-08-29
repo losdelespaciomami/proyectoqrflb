@@ -1,0 +1,21 @@
+<ion-header [translucent]="false">
+  <img src="../../assets/img/logo.png">
+  <ion-item *ngFor="let usuario of lista_usuarios">
+    <ion-label>
+      <h2>Bienvenido: {{usuario.nombreUsuario}}</h2>
+      <ion-button (click)="eliminar(usuario.nombreUsuario)" [routerLink]="['/docente']" expand="block" fill="clear" color="transparent">
+        <ion-icon name="arrow-back-outline"></ion-icon>Volver</ion-button>
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-text-center">
+    <b>Cursos disponibles</b>
+  </ion-grid>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Aplicaciones Moviles 002D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Aplicaciones Moviles 003D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Arquitectura 006D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Arquitectura 008D</ion-button></ion-item>
+  <ion-item><ion-button class="cursos" [routerLink]="['/docenteinicio']">Consulta base de datos 005D</ion-button></ion-item>
+</ion-content>

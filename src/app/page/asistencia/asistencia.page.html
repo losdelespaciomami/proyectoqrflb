@@ -1,0 +1,42 @@
+<ion-header [translucent]="false">
+  <img src="../../assets/img/logo.png">
+  <ion-back-button text="Volver" icon="arrow-back" defaultHref="docenteinicio"></ion-back-button>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <b>Se considera aprobado al Alumno que tenga un minimo del 60% de asistencia</b>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-label></ion-label>
+      <ion-label>Asistencia</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Lucas Rojas</ion-label>
+      <ion-badge color="success"> 90% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cynthia Gonzalez</ion-label>
+      <ion-badge color="success"> 100% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Benjamin Gallardo</ion-label>
+      <ion-badge color="success"> 80% </ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nicolas Rojas</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Samuel Antileo</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Alicia Diaz</ion-label>
+      <ion-badge color="success">100%</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <ion-button [routerLink]="['/reprobados']" expand="block" fill="clear" color="transparent">Reprobados</ion-button>
+</ion-content>

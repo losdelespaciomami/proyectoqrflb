@@ -1,0 +1,11 @@
+$white-color: rgb(0, 0, 0);
+$height100: 100%;
+
+@media (min-width: 240px) and (max-width: 768px) {
+    ion-grid {
+        background: $white-color;
+    }
+    ion-col {
+        border: none;
+    }
+}
